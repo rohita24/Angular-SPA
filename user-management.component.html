@@ -1,0 +1,9 @@
+<div class="user-mgmt-wrapper">
+    <h3>User Management (Admin Only)</h3>
+    <ul class="user-list">
+      <li *ngFor="let user of users">
+        <strong>{{ user.userId }}</strong> - {{ user.role }}
+      </li>
+    </ul>
+  </div>
+  

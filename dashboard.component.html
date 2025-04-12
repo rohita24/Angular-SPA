@@ -1,0 +1,26 @@
+<div class="dashboard-wrapper">
+    <div class="dashboard-header">
+      <h2>Welcome, {{ role }}</h2>
+      <button class="logout-btn" (click)="logout()">Logout</button>
+    </div>
+  
+    <div *ngIf="loading" class="loading-text">Loading user data...</div>
+  
+    <div *ngIf="!loading" class="table-container">
+      <table>
+        <thead>
+          <tr>
+            <th>User ID</th>
+            <th>Role</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let user of users">
+            <td>{{ user.userId }}</td>
+            <td>{{ user.role }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  
