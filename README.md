@@ -1,7 +1,6 @@
 RUNNUNG BACKEND
 F:\angular-node-spa\backend>npm install
 F:\angular-node-spa\backend>node server.js
-Server running at http://localhost:3000
 
 
 RUNNUNG FRONTEND
